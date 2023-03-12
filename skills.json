@@ -1,0 +1,65 @@
+{
+  "frontend_skills": [
+    {
+      "name": "ASP/MVC .NET",
+      "img": "net-ico.png",
+      "id": 1
+    },
+    {
+      "name": "Xamarin .NET",
+      "img": "xamarin-ico.png",
+      "id": 2
+    },
+    {
+      "name": "HTML & CSS",
+      "img": "html-ico.png",
+      "id": 3
+    },
+    {
+      "name": "JS & JQuery",
+      "img": "js-ico.png",
+      "id": 4
+    },
+    {
+      "name": "SASS/SCSS",
+      "img": "sass-ico.png",
+      "id": 5
+    },
+    {
+      "name": "Gulp",
+      "img": "gulp-ico.png",
+      "id": 6
+    },
+    {
+      "name": "React JS",
+      "img": "reactjs-ico.png",
+      "id": 7
+    }]
+  ,
+  "design_skills": [
+    {
+      "name": "3DS MAX",
+      "img": "3ds-ico.png",
+      "id": 1
+    },
+    {
+      "name": "Adobe Illustrator",
+      "img": "ai-ico.png",
+      "id": 2
+    },
+    {
+      "name": "Adobe Photoshop",
+      "img": "psd-ico.png",
+      "id": 3
+    },
+    {
+      "name": "Adobe XD",
+      "img": "xd-ico.png",
+      "id": 4
+    },
+    {
+      "name": "Figma",
+      "img": "figma-ico.png",
+      "id": 5
+    }]
+}
