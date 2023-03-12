@@ -1,0 +1,139 @@
+{
+  "frontend_works": [
+    {
+      "name": "White Lotus",
+      "url": "michaellyf95.github.io/white-lotus/",
+      "img": "whitelotus-proj.jpg",
+      "id": 1
+    },
+    {
+      "name": "White Lotus (React)",
+      "url": "michaellyf95.github.io/whitelotus-react/",
+      "img": "whitelotus-proj.jpg",
+      "id": 2
+    },
+    {
+      "name": "Donuts",
+      "url": "michaellyf95.github.io/donuts/",
+      "img": "donuts-proj.jpg",
+      "id": 3
+    },
+    {
+      "name": "Cross Solutions",
+      "url": "michaellyf95.github.io/cross-solutions/",
+      "img": "cs-proj.jpg",
+      "id": 4
+    },
+    {
+      "name": "ObsidianPanduh (Old)",
+      "url": "michaellyf95.github.io/obsidianpanduh-old/",
+      "img": "panduhold-proj.jpg",
+      "id": 5
+    },
+    {
+      "name": "SSL Hubs",
+      "url": "michaellyf95.github.io/ssl-hub/",
+      "img": "sslhub-proj.jpg",
+      "id": 6
+    },
+    {
+      "name": "Resource Chemicals",
+      "url": "michaellyf95.github.io/resource-chemicals/",
+      "img": "rc-proj.jpg",
+      "id": 7
+    },
+    {
+      "name": "Cutiku",
+      "url": "cutiku.com",
+      "img": "cutiku-proj.jpg",
+      "id": 8
+    },
+    {
+      "name": "Blackswan Strategic",
+      "url": "admin.blackswanasia.com/",
+      "img": "blackswan-proj.jpg",
+      "id": 9
+    }
+  ]
+  ,
+  "design_works": [
+    {
+      "name": "SM Materials #1",
+      "url": "www.behance.net/gallery/164688345/Social-Media-Materials-1",
+      "img": "design_1.jpg",
+      "id": 1
+    },
+    {
+      "name": "SM Materials #2",
+      "url": "www.behance.net/gallery/164688381/Social-Media-Materials-2",
+      "img": "design_2.jpg",
+      "id": 2
+    },
+    {
+      "name": "SM Materials #3",
+      "url": "www.behance.net/gallery/164689237/Social-Media-Materials-3",
+      "img": "design_3.jpg",
+      "id": 3
+    },
+    {
+      "name": "SM Materials #4",
+      "url": "www.behance.net/gallery/164690005/Social-Media-Materials-4",
+      "img": "design_4.jpg",
+      "id": 4
+    },
+    {
+      "name": "JYNNS Nutri King",
+      "url": "www.behance.net/gallery/164693237/JYNNS-Nutri-King-Mixed-Red-Dates-and-Beetroot",
+      "img": "design_5.jpg",
+      "id": 5
+    },
+    {
+      "name": "MSI M.M",
+      "url": "www.behance.net/gallery/164704895/MSI-Marketing-Material",
+      "img": "design_6.jpg",
+      "id": 6
+    },
+    {
+      "name": "ezconet Branding & M.M",
+      "url": "www.behance.net/gallery/165013263/ezconet-Branding-and-Marketing-Materials",
+      "img": "design_7.jpg",
+      "id": 7
+    },
+    {
+      "name": "Winskill Testimonial Collection",
+      "url": "www.behance.net/gallery/165299583/Winskill-Testimonial-Collection",
+      "img": "design_8.jpg",
+      "id": 8
+    },
+    {
+      "name": "Modernized Chinapress UI/UX",
+      "url": "www.behance.net/gallery/165388599/Modernized-Chinapress-UIUX-Wireframe",
+      "img": "design_9.jpg",
+      "id": 9
+    },
+    {
+      "name": "White Lotus Web Design",
+      "url": "www.behance.net/gallery/165396759/White-Lotus-Web-Design",
+      "img": "design_10.jpg",
+      "id": 10
+    },
+    {
+      "name": "Donuts Web Design",
+      "url": "www.behance.net/gallery/165416175/Donuts-Web-Design",
+      "img": "design_11.jpg",
+      "id": 11
+    },
+    {
+      "name": "CS Web Design #1",
+      "url": "www.behance.net/gallery/165481255/Cross-Solutions-Web-Design-1",
+      "img": "design_12.jpg",
+      "id": 12
+    },
+    {
+      "name": "CS Web Design #2",
+      "url": "www.behance.net/gallery/165485553/Cross-Solutions-Web-Design-2",
+      "img": "design_13.jpg",
+      "id": 13
+    }
+  ]
+}
