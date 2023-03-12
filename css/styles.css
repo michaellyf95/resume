@@ -14,6 +14,9 @@ body {
   overflow-x: hidden;
   background-color: #eeeeee;
 }
+body.mobile {
+  height: 100vh;
+}
 
 img {
   max-width: 100%;
@@ -105,19 +108,9 @@ footer div a:not(:hover) {
   transition: 0.1s;
 }
 
-@media only screen and (max-width: 800px) {
-  footer {
-    padding: 40px 20px 120px 20px;
-  }
-}
 @media only screen and (max-width: 400px) {
   hr {
     margin: 40px 0 0 0;
-  }
-  h1 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    font-weight: normal;
   }
   h2 {
     font-size: 1.4rem;
@@ -127,20 +120,6 @@ footer div a:not(:hover) {
   }
   footer {
     font-size: 0.9rem;
-    padding: 40px 20px 120px 20px;
-  }
-  footer div a {
-    margin: 0 10px 20px 10px;
-    font-size: 1.8rem;
-  }
-  footer div a:hover {
-    transform: scale(1.1, 1.1);
-    color: #4D4D4D;
-    transition: 0.1s;
-  }
-  footer div a:not(:hover) {
-    transform: scale(1, 1);
-    transition: 0.1s;
   }
 }
 header {
@@ -148,7 +127,7 @@ header {
   background-color: white;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 5;
   padding: 0 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
@@ -157,14 +136,12 @@ header .header-content {
   justify-content: space-between;
   align-items: center;
 }
-header .header-title {
-  border-bottom: 4px #1C1C1C solid;
-}
 header a {
   position: relative;
   color: #1C1C1C;
   font-family: "alte_din";
   font-size: 1.4rem;
+  margin: 15px 0;
 }
 header a.link-middle {
   margin: 0 30px;
@@ -177,57 +154,54 @@ header a:hover {
   transition: 0.2s;
 }
 
-.mobile-header {
+.mobile-header-menu {
+  display: none;
+}
+.mobile-header-menu a {
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.mobile-menu {
   display: none;
   position: fixed;
-  background-color: white;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  padding: 0 20px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-color: rgba(28, 28, 28, 0.4);
 }
-.mobile-header .mobile-header-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.mobile-header .mobile-header-content div {
-  margin: 0;
-  padding: 20px 0;
-  width: 2px;
-  background-color: #D8D8D8;
-}
-.mobile-header a {
-  position: relative;
-  color: #1C1C1C;
-  font-family: "alte_din";
-  font-size: 1.4rem;
-  margin: 0;
-  padding: 25px 0;
+.mobile-menu .mobile-menu-content {
+  padding: 150px 20px 100px 20px;
+  background-color: #eeeeee;
   text-align: center;
 }
-.mobile-header a:hover {
-  color: #4D4D4D;
-  transition: 0.2s;
+.mobile-menu .mobile-menu-content a {
+  display: block;
+  margin-bottom: 50px;
+  color: #1C1C1C;
+  font-family: "alte_din";
+  font-size: 2rem;
+}
+.mobile-menu .mobile-menu-content div {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.mobile-menu .mobile-menu-content div a {
+  color: #1C1C1C;
+  margin: 0 15px 20px 15px;
+  font-size: 2.5rem;
+}
+.mobile-menu.open {
+  display: block;
 }
 
 @media only screen and (max-width: 800px) {
-  header .header-content {
-    display: flex;
-    justify-content: center;
-  }
   header .header-links {
     display: none;
   }
-  .mobile-header {
+  .mobile-header-menu {
     display: block;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .mobile-header a {
-    font-size: 1.2rem;
   }
 }
 .top-div {
@@ -410,15 +384,15 @@ header a:hover {
   }
 }
 .frontend-div {
-  padding: 120px 20px 0 20px;
-  margin: -120px 0 60px 0;
+  padding: 0 20px;
+  margin: 60px 0;
 }
 .frontend-div h2 {
   text-align: left;
 }
 .frontend-div .frontend-div-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, min(50%, max(200px, 16.6666666667%))));
+  grid-template-columns: repeat(auto-fit, minmax(0, min(50%, max(200px, 20%))));
   row-gap: 40px;
   margin-top: 60px;
 }
@@ -461,8 +435,7 @@ header a:hover {
 
 @media only screen and (max-width: 428px) {
   .frontend-div {
-    padding: 80px 20px 0 20px;
-    margin: -80px 0 40px 0;
+    margin: 40px 0;
   }
   .frontend-div h2 {
     text-align: center;
@@ -476,8 +449,8 @@ header a:hover {
   }
 }
 .history-div {
-  padding: 120px 20px 0 20px;
-  margin: -120px 0 60px 0;
+  padding: 0 20px;
+  margin: 60px 0 150px 0;
 }
 .history-div h2 {
   text-align: left;
@@ -524,8 +497,7 @@ header a:hover {
 }
 @media only screen and (max-width: 428px) {
   .history-div {
-    padding: 80px 20px 0 20px;
-    margin: -80px 0 40px 0;
+    margin: 40px 0 100px 0;
   }
   .history-div h2 {
     text-align: center;
@@ -549,8 +521,8 @@ header a:hover {
   }
 }
 .frontend-proj-div {
-  padding: 120px 20px 0 20px;
-  margin: -120px 0 60px 0;
+  padding: 150px 20px 0 20px;
+  margin: 0 0 150px 0;
 }
 .frontend-proj-div h2 {
   text-align: left;
@@ -701,6 +673,9 @@ header a:hover {
   }
 }
 @media only screen and (max-width: 800px) {
+  .frontend-proj-div {
+    padding: 100px 20px 0 20px;
+  }
   .frontend-proj-div h2 {
     text-align: left;
   }
@@ -710,10 +685,14 @@ header a:hover {
     row-gap: 40px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .frontend-proj-div {
+    padding: 100px 20px 0 20px;
+  }
+}
 @media only screen and (max-width: 428px) {
   .frontend-proj-div {
-    padding: 80px 20px 0 20px;
-    margin: -80px 0 40px 0;
+    padding: 100px 20px 0 20px;
   }
   .frontend-proj-div h2 {
     text-align: center;
@@ -739,7 +718,7 @@ header a:hover {
     border-bottom-right-radius: 5px;
   }
   .frontend-proj-div .frontend-proj-div-content .frontend-proj-content .bottom-pad h4 {
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
   }
   .frontend-proj-div .frontend-proj-div-content .frontend-proj-content .bottom-pad i {
@@ -773,16 +752,15 @@ header a:hover {
   }
 }
 .design-proj-div {
-  padding: 0 20px;
-  margin: 60px 0 150px 0;
+  padding: 150px 20px 0 20px;
 }
 .design-proj-div h2 {
   text-align: left;
 }
 .design-proj-div .design-proj-div-content {
   display: grid;
-  grid-template-columns: 48% 48%;
-  column-gap: 4%;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
   row-gap: 40px;
   margin-top: 60px;
 }
@@ -865,12 +843,119 @@ header a:hover {
 .design-proj-div .design-proj-div-content .design-proj-content:not(:hover) .bottom-pad i {
   animation: arrow-slide-left 0.2s ease 0s 1 normal forwards;
 }
+.design-proj-div hr {
+  margin: 80px 0;
+}
 
-@media only screen and (max-width: 600px) {
-  .design-proj-div {
-    padding: 0 20px;
-    margin: 60px 0;
+.design-more-div {
+  padding: 0 20px;
+  margin: 0 0 150px 0;
+}
+.design-more-div h2 {
+  text-align: left;
+}
+.design-more-div .design-more-div-content {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+  row-gap: 40px;
+  margin-top: 60px;
+}
+.design-more-div .design-more-div-content .design-more-content {
+  cursor: pointer;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.design-more-div .design-more-div-content .design-more-content .top-pad {
+  opacity: 0;
+  position: absolute;
+  top: -12px;
+  width: 100%;
+  height: 20px;
+  background-color: #0077FF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.design-more-div .design-more-div-content .design-more-content .bottom-pad {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 30px;
+  padding: 10px 5%;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.design-more-div .design-more-div-content .design-more-content .bottom-pad h4 {
+  position: relative;
+  text-align: left;
+  font-family: "alte_din";
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 0;
+}
+.design-more-div .design-more-div-content .design-more-content .bottom-pad i {
+  color: white;
+  position: relative;
+  font-size: 1.8rem;
+  float: right;
+  margin-left: 5px;
+}
+.design-more-div .design-more-div-content .design-more-content:hover .top-pad {
+  animation: top-pad-on 0.2s ease 0s 1 normal forwards;
+}
+.design-more-div .design-more-div-content .design-more-content:hover .bottom-pad {
+  bottom: -15px;
+  padding: 15px 5%;
+  background-color: #0077FF;
+  transition: 0.3s;
+}
+.design-more-div .design-more-div-content .design-more-content:hover .bottom-pad h4 {
+  color: white;
+  transition: 0.3s;
+}
+.design-more-div .design-more-div-content .design-more-content:hover .bottom-pad i {
+  animation: arrow-slide-right 0.2s ease 0s 1 normal forwards;
+}
+.design-more-div .design-more-div-content .design-more-content:not(:hover) .top-pad {
+  animation: top-pad-off 0.2s ease 0s 1 normal forwards;
+}
+.design-more-div .design-more-div-content .design-more-content:not(:hover) .bottom-pad {
+  bottom: 0;
+  padding: 10px 5%;
+  background-color: white;
+  transition: 0.3s;
+}
+.design-more-div .design-more-div-content .design-more-content:not(:hover) .bottom-pad h4 {
+  color: #1C1C1C;
+  transition: 0.3s;
+}
+.design-more-div .design-more-div-content .design-more-content:not(:hover) .bottom-pad i {
+  animation: arrow-slide-left 0.2s ease 0s 1 normal forwards;
+}
+
+@media only screen and (max-width: 1000px) {
+  .design-proj-div .design-proj-div-content {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    row-gap: 40px;
+    margin-top: 60px;
   }
+}
+@media only screen and (max-width: 800px) {
+  .design-proj-div {
+    padding: 100px 20px 0 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
   .design-proj-div h2 {
     text-align: left;
   }
@@ -879,12 +964,16 @@ header a:hover {
     grid-template-columns: 100%;
     row-gap: 40px;
   }
+  .design-more-div h2 {
+    text-align: left;
+  }
+  .design-more-div .design-more-div-content {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 40px;
+  }
 }
 @media only screen and (max-width: 428px) {
-  .design-proj-div {
-    padding: 0 20px;
-    margin: 40px 0 80px 0;
-  }
   .design-proj-div h2 {
     text-align: center;
   }
@@ -915,29 +1004,7 @@ header a:hover {
     display: none;
     animation: none;
   }
-  .design-proj-div .design-proj-div-content .design-proj-content:hover {
-    animation: none;
-  }
-  .design-proj-div .design-proj-div-content .design-proj-content:hover .top-pad {
-    animation: none;
-  }
-  .design-proj-div .design-proj-div-content .design-proj-content:hover .bottom-pad {
-    bottom: 0;
-    padding: 10px 5%;
-    background-color: white;
-  }
-  .design-proj-div .design-proj-div-content .design-proj-content:hover .bottom-pad h4 {
-    color: #1C1C1C;
-  }
-  .design-proj-div .design-proj-div-content .design-proj-content:not(:hover) .top-pad {
-    animation: none;
-  }
-  .design-proj-div .design-proj-div-content .design-proj-content:not(:hover) .bottom-pad {
-    bottom: 0;
-    padding: 10px 5%;
-    background-color: white;
-  }
-  .design-proj-div .design-proj-div-content .design-proj-content:not(:hover) .bottom-pad h4 {
-    color: #1C1C1C;
+  .design-proj-div hr {
+    margin: 50px 0;
   }
 }
