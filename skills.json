@@ -61,5 +61,11 @@
       "name": "Figma",
       "img": "figma-ico.png",
       "id": 5
-    }]
+    },
+    {
+      "name": "Adobe Dimension",
+      "img": "dimension-ico.png",
+      "id": 6
+    }
+  ]
 }
