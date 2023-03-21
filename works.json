@@ -49,10 +49,16 @@
       "id": 8
     },
     {
-      "name": "Blackswan Strategic",
+      "name": "Blackswan Strategic (admin)",
       "url": "admin.blackswanasia.com/",
       "img": "blackswan-proj.jpg",
       "id": 9
+    },
+    {
+      "name": "Blackswan Strategic",
+      "url": "blackswanasia.com/",
+      "img": "blackswan-proj.jpg",
+      "id": 10
     }
   ]
   ,
