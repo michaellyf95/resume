@@ -66,6 +66,11 @@
       "name": "Adobe Dimension",
       "img": "dimension-ico.png",
       "id": 6
+    },
+    {
+      "name": "Creatopy",
+      "img": "creatopy-ico.png",
+      "id": 7
     }
   ]
 }
