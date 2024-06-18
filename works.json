@@ -1,64 +1,76 @@
 {
   "frontend_works": [
     {
+      "name": "Harvey Norman Malaysia",
+      "url": "https://www.harveynorman.com.my/",
+      "img": "hnmy-proj.jpg",
+      "id": 1
+    },
+    {
+      "name": "Harvey Norman Singapore",
+      "url": "https://www.harveynorman.com.sg/",
+      "img": "hnsg-proj.jpg",
+      "id": 2
+    },
+    {
       "name": "White Lotus",
       "url": "michaellyf95.github.io/white-lotus/",
       "img": "whitelotus-proj.jpg",
-      "id": 1
+      "id": 3
     },
     {
       "name": "White Lotus (React)",
       "url": "michaellyf95.github.io/whitelotus-react/",
       "img": "whitelotus-proj.jpg",
-      "id": 2
+      "id": 4
     },
     {
       "name": "Donuts",
       "url": "michaellyf95.github.io/donuts/",
       "img": "donuts-proj.jpg",
-      "id": 3
+      "id": 5
     },
     {
       "name": "Cross Solutions",
       "url": "michaellyf95.github.io/cross-solutions/",
       "img": "cs-proj.jpg",
-      "id": 4
+      "id": 6
     },
     {
       "name": "ObsidianPanduh (Old)",
       "url": "michaellyf95.github.io/obsidianpanduh-old/",
       "img": "panduhold-proj.jpg",
-      "id": 5
+      "id": 7
     },
     {
       "name": "SSL Hubs",
       "url": "michaellyf95.github.io/ssl-hub/",
       "img": "sslhub-proj.jpg",
-      "id": 6
+      "id": 8
     },
     {
       "name": "Resource Chemicals",
       "url": "michaellyf95.github.io/resource-chemicals/",
       "img": "rc-proj.jpg",
-      "id": 7
+      "id": 9
     },
     {
       "name": "Cutiku",
       "url": "cutiku.com",
       "img": "cutiku-proj.jpg",
-      "id": 8
+      "id": 10
     },
     {
       "name": "Blackswan Strategic (admin)",
       "url": "admin.blackswanasia.com/",
       "img": "blackswan-proj.jpg",
-      "id": 9
+      "id": 11
     },
     {
       "name": "Blackswan Strategic",
       "url": "blackswanasia.com/",
       "img": "blackswan-proj.jpg",
-      "id": 10
+      "id": 12
     }
   ]
   ,
